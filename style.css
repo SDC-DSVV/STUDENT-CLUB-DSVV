@@ -32,10 +32,6 @@ header {
 
 .logo {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
 }
 
 .logo img {
@@ -62,6 +58,20 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.bounce-btn {
+    text-align: center;
+    opacity: 1;
+    background: #0323B2;
+    color: #fff;
+    animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        transform: scale(1.2);
+    }
 }
 
 .slideshow-container {
@@ -204,16 +214,17 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-.toc h2{
-    color:var(--primary-color);
+.toc h2 {
+    color: var(--primary-color);
 }
 
-.toc ul{
+.toc ul {
     list-style: square;
     margin-left: 1rem;
 }
+
 .footer {
-    background-color: var(--footer-bg-color);
+    background-color: #0F094B;
     color: #fff;
     padding: 40px 20px 20px;
 }
